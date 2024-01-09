@@ -10,7 +10,7 @@ namespace TestProject1
     public class AppDbContextTests
     {
         [Fact]
-        public void AppDbContext_DbPath_ReturnsProperValue()
+        public void AppDbContextReturnsProperValue()
         {
 
             var dbPath = "test_db.db";
@@ -20,7 +20,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void AppDbContext_Intervals_ReturnsDbSet()
+        public void AppDbContextReturnsDbSet()
         {
 
             var options = new DbContextOptionsBuilder<AppDbContext>().UseInMemoryDatabase(databaseName: "test_db").Options;
